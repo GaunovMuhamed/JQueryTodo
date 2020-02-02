@@ -1,0 +1,359 @@
+body{
+    background-color: antiquewhite;
+}
+
+#MainTxt{
+    height: 100px;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+h1{
+    font-size: 100px;
+    color:  cornflowerblue;
+    text-align: center;
+    text-shadow: 3px 2px  black;
+}
+
+h2{
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: grey;
+    margin-left:290px;
+    magrin-bottom: -100px;
+    margin-top:7px;
+
+}
+
+h2:hover{
+    background-color: navajowhite;
+}
+
+#WorkPart{
+    margin:0 auto;
+    margin-top: 10px;
+    width: 450px;
+    height: 30px;
+    border-radius: 10px;
+    position:relative;
+}
+
+#inp{
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+#newinp{
+    padding-top: 4px;
+    padding-left: 8px;
+    width: 340px;
+    height: 25px;
+    outline: none;
+    border: none;
+    background-color: whitesmoke;
+    position: absolute;
+    letter-spacing: 3px;
+    font-size: 20px;
+
+
+}
+
+#newinp::placeholder{
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+#newbtn{
+    position: absolute;
+    margin-left: 345px;
+    height: 30px;
+    width:65px;
+    border-radius: 10px;
+    outline: none;
+    background-color: cornflowerblue;
+
+}
+
+#arrow{
+    height:30px;
+    width:40px;
+    visibility:hidden;
+    background-color: whitesmoke;
+    border-radius: 10px;
+
+}
+#arrow:hover{
+    background-color: grey;
+}
+
+
+.added{
+    background-color: whitesmoke;
+    height: 50px;
+    width:455px;
+    border-radius: 10px;
+    margin-top:10px;
+    visibility: hidden;
+}
+
+#innertext{
+    background-color: yellow;
+}
+
+#list{
+    list-style-type: none;
+    padding-left:0px;
+
+}
+
+.check{
+    height:45px;
+    width:45px;
+    margin-top:5px;
+    margin-left:3px;
+}
+
+li{
+    position: relative;
+    padding-top:3px;
+    padding-left:4px;
+    background-color: whitesmoke;
+    border-radius:10px;
+    margin-top:5px;
+}
+
+.msg{
+    position: absolute;
+    top: 8px;
+    height: 30px;
+    width: 340px;
+    color: grey;
+    outline: none;
+    border: none;
+    background-color: whitesmoke;
+    cursor:default;
+    letter-spacing: 3px;
+    font-size: 20px;
+    margin-top: 5px ;
+    margin-left: 50px;
+    border-radius: 0 10px 10px 0;
+
+}
+
+.container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 1px;
+    z-index: 10;
+    margin-top: 10px;
+    margin-left:4px;
+
+
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color: #ccc;
+    border-radius: 20px;
+    margin-left: -3px;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: grey;
+}
+
+c {
+    background-color: cornflowerblue;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 10px;
+    height: 15px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-left:1px;
+}
+
+.ad{
+    background-color: whitesmoke;
+    height:55px;
+
+
+}
+
+.cross{
+    height:20px;
+    width:20px;
+    margin-left:410px;
+}
+
+.cross:hover{
+    background-color: #4e555b;
+    border-radius: 10px;
+}
+
+#bottom{
+    background-color: whitesmoke;
+    border-radius: 0 0 10px 10px;
+    height:60px;
+
+}
+
+.botCommands{
+    top: 8px;
+    color: grey;
+    outline: none;
+    border: none;
+    background-color: whitesmoke;
+    cursor:default;
+    font-size: 15px;
+    width:120px;
+    margin-top: 3px;
+    text-align:center;
+
+}
+
+.botCommands:hover{
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+.botCommandsPressed{
+    top: 8px;
+    color: grey;
+    outline: none;
+    border: none;
+    background-color: antiquewhite;
+    cursor:default;
+    font-size: 15px;
+    width:120px;
+    margin-top: 3px;
+    text-align:center;
+}
+
+#removechecked{
+    /*background-color: #0b2e13;*/
+    margin-left: 160px;
+}
+#checked{
+    margin-left:40px;
+}
+#unchecked{
+    margin-left: 30px;
+}
+
+#counts{
+    height:50px;
+    width:600px;
+    margin: auto;
+}
+
+.topmsg{
+    position: relative;
+    height: 30px;
+    width: auto;
+    color: grey;
+    outline: none;
+    border: none;
+    cursor:default;
+    letter-spacing: 3px;
+    font-size: 16px;
+    margin-top: 8px ;
+    margin-left: 60px;
+    text-align: center;
+
+
+}
+
+.topmsg, textarea{
+    background-color: antiquewhite;
+}
+
+#pages{
+    background-color: cornflowerblue;
+    height:50px;
+    width:300px;
+    margin: 0 auto 50px;
+    border-radius: 0 0 10px 10px;
+
+}
+
+.pagebuttons{
+    width:30px;
+    margin-top:8px;
+
+}
+.pagebuttons:hover{
+    background-color: grey;
+    cursor:pointer;
+}
+
+#btnnone{
+    margin-left:auto;
+}
+#btnnone:hover{
+    cursor:default;
+}
+
+#btnleft{
+    border-radius:10px 0 0 10px;
+    outline: none;
+    margin-left: 45px;
+}
+
+#btnright{
+    border-radius:0 10px 10px 0;
+    outline: none;
+}
+
+a{
+    color:black;
+}
+a:hover{
+    color:black;
+    text-decoration: none;
+}
+
+#pages{
+    background-color: cornflowerblue;
+    list-style-type: none;
+}
+
+
+
+
